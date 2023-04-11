@@ -1,5 +1,5 @@
 function quickSort(arr){
-    if(arr.length==1){
+    if(arr.length<=1){
         return arr
     }
     let pivotIndex = Math.floor(arr.length/2)
@@ -20,6 +20,6 @@ function quickSort(arr){
     return [...quickSort(left),pivot,...quickSort(right)]
 }
 
-module.exports ={
+module.exports = {
     quickSort
 }
